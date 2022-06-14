@@ -21,6 +21,10 @@ export default NextAuth({
       }
     })
   ],
+  pages: {
+    signIn: '/login',
+
+  },
   callbacks: {
     jwt: async ({ token, user }) => {
 
